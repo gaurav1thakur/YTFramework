@@ -12,6 +12,33 @@ For instance : Check your chrome driver version > 3dots > help > about chrome eg
 Find suitable chrome driver compatible to this version  here https://chromedriver.storage.googleapis.com/index.html
 (76.0.3809.100) -> Compatible chrome driver version 76.0.3809.12 (https://chromedriver.storage.googleapis.com/index.html?path=76.0.3809.12/)
 ```
+#### Locators in Selenium WebDriver
+
+Different types of Locators in Selenium are as follows:
+
+```
+1. ID : findElement(By.id("IdName"))
+2. Name : findElement(By.name("Name")) 
+3. Class Name : findElement(By.className("Element Class"))
+4. Tag Name : findElement(By.tagName("HTML Tag Name"))
+5. Link Text  : findElement(By.linkText("LinkText"))
+6. Partial Link Text : findElement(By.partialLinkText("partialLinkText"))
+7. CSS Selector : 
+
+7.1 Tag and ID
+findElement(By.cssSelector(tag#id))
+
+7.2 Tag and Class
+findElement(By.cssSelector(tag.class))
+
+7.3 Tag and Attribute
+findElement(By.cssSelector(tag[attribute=value]))
+
+7.4 Tag, Class and Attribute
+findElement(By.cssSelector(tag.class[attribute=value]))
+
+8. XPath :  findElement(By.xpath("XPath"))
+```
 
 #### TestNG Setup:
 
