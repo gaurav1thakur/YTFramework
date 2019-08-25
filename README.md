@@ -1,7 +1,7 @@
-#You Tube Sample Framework
+# You Tube Sample Framework
 
-####Selenium Setup:
-###Selected IDE: IntelliJ
+#### Selenium Setup:
+### Selected IDE: IntelliJ
 
 ```
 Selenium Setup: https://www.seleniumhq.org/download/
@@ -13,8 +13,9 @@ Find suitable chrome driver compatible to this version  here https://chromedrive
 (76.0.3809.100) -> Compatible chrome driver version 76.0.3809.12 (https://chromedriver.storage.googleapis.com/index.html?path=76.0.3809.12/)
 ```
 
-####TestNG Setup:
-###TestNG Setup: https://www.jetbrains.com/help/idea/creating-testng-test-classes.html
+#### TestNG Setup:
+
+https://www.jetbrains.com/help/idea/creating-testng-test-classes.html
 
 ```
 Create TestNG.xml Plugin: File > Settings/ Preferences > Plugin >  Create TestNG XML > Select all Classes and right click  that needs to be included in Test Suite TestNG.xml
@@ -22,7 +23,7 @@ Running TestNG.xml :Run/Debug Configurations > + > TestNG > Edit Configuration >
 Report Generation:  Edit Configuration > Listeners > User default Reports > test-output folder will generated with html reports 
 ```
 
-####Test NG Advantages : 
+#### Test NG Advantages : 
 
 
 1. More Annotations in TestNG comparing to Junit 
