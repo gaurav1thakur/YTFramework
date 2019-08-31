@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/welcom/Documents/YTFramework/src/org/testng/TestScripts/TC1.java">
+        <classes>
+            <class name="org.testng.TestScripts.TC1">
+                <methods>
+                    <include name="launchYoutubeTrending"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/welcom/Documents/YTFramework/src/org/testng/TestScripts/TC2.java">
+        <classes>
+            <class name="org.testng.TestScripts.TC2">
+                <methods>
+                    <include name="launchYoutubeLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/welcom/Documents/YTFramework/src/org/testng/TestScripts/TC3.java">
+        <classes>
+            <class name="org.testng.TestScripts.TC3">
+                <methods>
+                    <include name="launchYoutubeVideoPlayLike"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/welcom/Documents/YTFramework/src/org/testng/TestScripts/TC4.java">
+        <classes>
+            <class name="org.testng.TestScripts.TC4">
+                <methods>
+                    <include name="launchYoutubeVideoPlaySubscribe"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/welcom/Documents/YTFramework/src/org/testng/TestScripts/TC5.java">
+        <classes>
+            <class name="org.testng.TestScripts.TC5">
+                <methods>
+                    <include name="launchYoutubeLoginHistory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/welcom/Documents/YTFramework/src/org/testng/Base/Base.java">
+        <classes/>
+    </test>
+</suite>

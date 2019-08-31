@@ -1,4 +1,4 @@
-package org.testing.Conceptual;
+package org.testng.Conceptual;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ public class SampleInvalidGMailUser {
     public static void main(String[] args) throws InterruptedException {
 //      FirefoxDriver driver = new FirefoxDriver();
         //setting weddriver path here, it should be downloaded and path should be accurate to launch webdriver compatible with chrome version 76.0.3809.100
-        System.setProperty("webdriver.chrome.driver","..\\YTFramework\\src\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "..\\YTFramework\\src\\resources\\chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
         driver.get("http://mail.google.com/");
         WebElement element = driver.findElement(By.xpath("//input[@type='email']"));
