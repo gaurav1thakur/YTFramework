@@ -13,13 +13,21 @@ public class TC5 extends Base {
     //("History ");
     @Test
     public void launchYoutubeLoginHistory() {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
         WebElement navigation = driver.findElement(By.xpath(properties.getProperty("navigation")));
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         navigation.click();
+        //what happens if user have no history ? will history tab will be enabled?
+
         WebElement history = driver.findElement(By.xpath(properties.getProperty("history")));
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        history.click();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        if(history.isDisplayed()){
+            driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+            history.click();
+        }else
+        {
+            //log history tab is not present for user
+        }
+
     }
 
 }

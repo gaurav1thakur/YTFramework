@@ -36,8 +36,13 @@ public class Login {
         password.sendKeys(properties.getProperty("passwordtogmail"));
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         //We Tried to use the same previous next web element but we getting error stale element ?
-        WebElement next2 = driver.findElement(By.xpath(properties.getProperty("next")));
-        next2.click();
+        try{
+            WebElement next2 = driver.findElement(By.xpath(properties.getProperty("next")));
+            next2.click();
+        }catch (Exception e){
+            WebElement next2 = driver.findElement(By.xpath(properties.getProperty("next")));
+            next2.click();
+        }
 
     }
 }

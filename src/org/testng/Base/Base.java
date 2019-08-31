@@ -39,7 +39,6 @@ public class Base {
         driver.get("https://www.youtube.com/");
         //System.out.println("Send keys to Youtube URL");
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
     }
 
     @AfterMethod

@@ -8,6 +8,8 @@ import org.testng.Base.Base;
 import org.testng.Pages.Login;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TC1 extends Base {
 //  Keeping @BeforeMethod and @AfterMethod this in Base Class cause its common in all test cases
 //    @BeforeMethod
@@ -24,8 +26,12 @@ public class TC1 extends Base {
         //TC1 Click on Trending
         System.out.println("Navigating to Trending Section");
         WebDriverWait wait = new WebDriverWait(driver, 5);
+       //Type of waits
         WebElement trending = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(properties.getProperty("trending"))));
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        Thread.sleep(2000);
         trending.click();
+
     }
 
     // The User Sign In Function for sign in process

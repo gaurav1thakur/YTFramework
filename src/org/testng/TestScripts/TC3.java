@@ -25,10 +25,9 @@ public class TC3 extends Base {
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath(properties.getProperty("playvideo")), 1));
         WebElement playVideo = driver.findElements(By.xpath(properties.getProperty("playvideo"))).get(0);
         playVideo.click();
-        Thread.sleep(2000);
-
-        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement likeVideo = driver.findElement(By.xpath(properties.getProperty("likevideo")));
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         likeVideo.click();
     }
 

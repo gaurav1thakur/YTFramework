@@ -8,23 +8,27 @@ import org.testng.Pages.Login;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 public class TC4 extends Base {
-    Login login = new Login(driver,properties);
+
     //("Login");
     //("Video Play");
     //("Channel Subscribe");
     @Test
     public void launchYoutubeVideoPlaySubscribe() throws InterruptedException {
+        Login login = new Login(driver,properties);
+        //if we make it global variable we getting null pinter in user sign In function?
         login.userSignIn();
 
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath(properties.getProperty("playvideo")), 1));
         WebElement playVideo = driver.findElements(By.xpath(properties.getProperty("playvideo"))).get(0);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         playVideo.click();
-        Thread.sleep(2000);
 
         // Channel Subscribe
-        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath(properties.getProperty("subscribe")), 1));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(properties.getProperty("subscribe"))));
         WebElement subscribe = driver.findElements(By.xpath(properties.getProperty("subscribe"))).get(0);
         subscribe.click();
     }
