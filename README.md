@@ -78,4 +78,6 @@ Report Generation:  Edit Configuration > Listeners > User default Reports > test
 
 Working with xPaths : https://www.guru99.com/xpath-selenium.html
 
-Usefull Plugin : ChroPath - https://medium.com/@mailcoolsanjay/chropath-firepath-for-chrome-browser-3130e72b4754
+Usefull Plugin : 
+Selector-hub https://medium.com/@mailcoolsanjay/selectorshub-a-new-reality-is-live-now-7be4794d058
+ChroPath - https://medium.com/@mailcoolsanjay/chropath-firepath-for-chrome-browser-3130e72b4754
